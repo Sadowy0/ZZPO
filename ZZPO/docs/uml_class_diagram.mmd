@@ -1,0 +1,74 @@
+classDiagram
+    %% Diagram klas dla projektu Planowanie diety
+    class UserProfile {
+        +int age
+        +int height_cm
+        +float weight_kg
+        +Gender gender
+        +ActivityLevel activity_level
+        +Goal goal
+        +set~str~ dietary_preferences
+        +int daily_meals
+    }
+
+    class Nutrition {
+        +int calories
+        +float protein_g
+        +float fat_g
+        +float carbs_g
+    }
+
+    class Meal {
+        +str id
+        +str name
+        +str meal_type
+        +Nutrition nutrition
+        +int prep_minutes
+        +set~str~ tags
+        +tuple~str~ ingredients
+    }
+
+    class DailyPlan {
+        +date day
+        +list~Meal~ meals
+        +int target_calories
+        +Nutrition total_nutrition
+    }
+
+    class WeeklyPlan {
+        +list~DailyPlan~ days
+        +Nutrition macro_target
+        +iter_meals()
+    }
+
+    class MealRepository {
+        +all()
+        +filter_by_preferences(preferences)
+    }
+
+    class NutritionService {
+        +estimate_daily_calories(profile)
+        +estimate_macro_target(profile, calories)
+    }
+
+    class MealPlannerService {
+        +create_weekly_plan(profile, start_day)
+        -_plan_day(meals, daily_meals, target_calories)
+    }
+
+    class ShoppingListService {
+        +build_for_week(plan)
+    }
+
+    class PlanExporter {
+        +save(plan, output_path)
+    }
+
+    WeeklyPlan "1" *-- "7" DailyPlan
+    DailyPlan "1" *-- "wiele" Meal
+    Meal "1" *-- "1" Nutrition
+
+    MealPlannerService --> MealRepository
+    MealPlannerService --> NutritionService
+    ShoppingListService --> WeeklyPlan
+    PlanExporter --> WeeklyPlan

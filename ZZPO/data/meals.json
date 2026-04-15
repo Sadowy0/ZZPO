@@ -1,0 +1,128 @@
+[
+  {
+    "id": "B01",
+    "name": "Owsianka z bananem",
+    "meal_type": "breakfast",
+    "nutrition": {"calories": 430, "protein_g": 16, "fat_g": 10, "carbs_g": 70},
+    "prep_minutes": 10,
+    "tags": ["vegetarian", "quick"],
+    "ingredients": ["platki owsiane", "banan", "mleko"]
+  },
+  {
+    "id": "B02",
+    "name": "Jogurt grecki z dodatkami",
+    "meal_type": "breakfast",
+    "nutrition": {"calories": 390, "protein_g": 28, "fat_g": 11, "carbs_g": 42},
+    "prep_minutes": 7,
+    "tags": ["quick", "high-protein", "vegetarian"],
+    "ingredients": ["jogurt grecki", "owoce lesne", "miod", "orzechy"]
+  },
+  {
+    "id": "B03",
+    "name": "Kanapka jajeczna",
+    "meal_type": "breakfast",
+    "nutrition": {"calories": 470, "protein_g": 24, "fat_g": 18, "carbs_g": 46},
+    "prep_minutes": 12,
+    "tags": ["quick", "high-protein"],
+    "ingredients": ["jajka", "chleb pelnoziarnisty", "pomidor", "szpinak"]
+  },
+  {
+    "id": "L01",
+    "name": "Kurczak z ryzem",
+    "meal_type": "lunch",
+    "nutrition": {"calories": 620, "protein_g": 43, "fat_g": 17, "carbs_g": 69},
+    "prep_minutes": 25,
+    "tags": ["high-protein"],
+    "ingredients": ["piers z kurczaka", "ryz", "brokul", "oliwa z oliwek"]
+  },
+  {
+    "id": "L02",
+    "name": "Curry z soczewicy",
+    "meal_type": "lunch",
+    "nutrition": {"calories": 560, "protein_g": 24, "fat_g": 16, "carbs_g": 78},
+    "prep_minutes": 30,
+    "tags": ["vegetarian"],
+    "ingredients": ["soczewica", "pomidor", "cebula", "mleko kokosowe", "ryz"]
+  },
+  {
+    "id": "L03",
+    "name": "Makaron z indykiem",
+    "meal_type": "lunch",
+    "nutrition": {"calories": 650, "protein_g": 39, "fat_g": 19, "carbs_g": 77},
+    "prep_minutes": 28,
+    "tags": ["high-protein"],
+    "ingredients": ["mieso mielone z indyka", "makaron", "sos pomidorowy", "cebula"]
+  },
+  {
+    "id": "D01",
+    "name": "Losos z ziemniakami",
+    "meal_type": "dinner",
+    "nutrition": {"calories": 610, "protein_g": 38, "fat_g": 25, "carbs_g": 49},
+    "prep_minutes": 30,
+    "tags": ["high-protein"],
+    "ingredients": ["losos", "ziemniaki", "mieszanka salat", "oliwa z oliwek"]
+  },
+  {
+    "id": "D02",
+    "name": "Tofu z warzywami z patelni",
+    "meal_type": "dinner",
+    "nutrition": {"calories": 540, "protein_g": 27, "fat_g": 18, "carbs_g": 61},
+    "prep_minutes": 20,
+    "tags": ["vegetarian", "quick"],
+    "ingredients": ["tofu", "ryz", "papryka", "sos sojowy"]
+  },
+  {
+    "id": "D03",
+    "name": "Chili wolowe",
+    "meal_type": "dinner",
+    "nutrition": {"calories": 670, "protein_g": 42, "fat_g": 24, "carbs_g": 68},
+    "prep_minutes": 35,
+    "tags": ["high-protein"],
+    "ingredients": ["chuda wolowina", "fasola", "pomidor", "cebula"]
+  },
+  {
+    "id": "S01",
+    "name": "Serek wiejski z jablkiem",
+    "meal_type": "snack",
+    "nutrition": {"calories": 250, "protein_g": 20, "fat_g": 5, "carbs_g": 28},
+    "prep_minutes": 5,
+    "tags": ["quick", "high-protein", "vegetarian"],
+    "ingredients": ["serek wiejski", "jablko", "cynamon"]
+  },
+  {
+    "id": "S02",
+    "name": "Koktajl bialkowy",
+    "meal_type": "snack",
+    "nutrition": {"calories": 310, "protein_g": 27, "fat_g": 6, "carbs_g": 37},
+    "prep_minutes": 6,
+    "tags": ["quick", "high-protein", "vegetarian"],
+    "ingredients": ["odzywka bialkowa", "banan", "mleko", "maslo orzechowe"]
+  },
+  {
+    "id": "S03",
+    "name": "Hummus i warzywa",
+    "meal_type": "snack",
+    "nutrition": {"calories": 280, "protein_g": 9, "fat_g": 14, "carbs_g": 29},
+    "prep_minutes": 8,
+    "tags": ["quick", "vegetarian"],
+    "ingredients": ["hummus", "marchew", "ogorek", "krakersy pelnoziarniste"]
+  },
+  {
+    "id": "L04",
+    "name": "Salatka z ciecierzycy",
+    "meal_type": "lunch",
+    "nutrition": {"calories": 500, "protein_g": 20, "fat_g": 17, "carbs_g": 61},
+    "prep_minutes": 15,
+    "tags": ["quick", "vegetarian"],
+    "ingredients": ["ciecierzyca", "feta", "pomidor", "ogorek", "oliwa z oliwek"]
+  },
+  {
+    "id": "D04",
+    "name": "Tortilla z kurczakiem",
+    "meal_type": "dinner",
+    "nutrition": {"calories": 580, "protein_g": 36, "fat_g": 16, "carbs_g": 64},
+    "prep_minutes": 18,
+    "tags": ["quick", "high-protein"],
+    "ingredients": ["piers z kurczaka", "tortilla", "sos jogurtowy", "salata"]
+  }
+]

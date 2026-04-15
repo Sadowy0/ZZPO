@@ -1,0 +1,25 @@
+sequenceDiagram
+    actor U as Uzytkownik
+    participant CLI as DietPlannerCLI
+    participant NS as NutritionService
+    participant MP as MealPlannerService
+    participant MR as MealRepository
+    participant SL as ShoppingListService
+
+    U->>CLI: Wybiera "Generuj plan tygodniowy"
+    CLI->>U: Prosi o dane profilu
+    U->>CLI: Podaje profil
+    CLI->>MP: create_weekly_plan(profile)
+    MP->>MR: filter_by_preferences(preferences)
+    MR-->>MP: lista posilkow
+    MP->>NS: estimate_daily_calories(profile)
+    NS-->>MP: cel kalorii
+    MP->>NS: estimate_macro_target(profile, calories)
+    NS-->>MP: cel makro
+    MP-->>CLI: WeeklyPlan
+    CLI-->>U: Pokazuje podsumowanie
+
+    U->>CLI: Wybiera liste zakupow
+    CLI->>SL: build_for_week(plan)
+    SL-->>CLI: liczba skladnikow
+    CLI-->>U: Wyswietla liste zakupow
